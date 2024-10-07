@@ -1,0 +1,286 @@
+:root{
+    /*Colors*/
+    --primary-color: #ffffff;
+    --bg-color: #30444E;
+    --yellow-color: #FFC542;
+    --green-color: #3ED598;
+    --red-color: #FF565E;
+    --card-bg-color: rgba(255, 255, 255, 0.13);
+
+    /*Fonts*/
+    --font-title: 'Monoton';
+    --font-open-sans: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+}
+.card-container{
+    width: 100%;
+    height: 194px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/Red_Big_Card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.card-content__h1{
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 8px;
+}
+.card-content__image{
+    display: flex;
+    justify-content: center;
+}
+.cards-container2{
+    display: flex;
+}
+#card-container__distance{
+    width: 400px;
+    background-color: var(--green-color);
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.card-container__distance--h1{
+    font-size: 1rem;
+    line-height: 15px;
+    text-align: center;
+    padding: 20px 11px;
+    font-weight: 900;
+
+}
+.card-container__distance--img{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+#card-container__polinomio{
+    width: 400px;
+    background-color: var(--yellow-color);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.card-container__polinomio--h1{
+    font-size: 1rem;
+    line-height: 15px;
+    text-align: center;
+    padding: 20px 11px;
+    font-weight: 900;
+    color: var(--bg-color);
+}
+.card-container-polinomio--img{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+.card-container-polinomio--img img{
+    top: 30px;
+    position: absolute;
+}
+
+/*Estilos de la Calculadora entre dos puntos*/
+
+.puntos-bg{
+    background-color: var(--green-color);
+    position: relative;
+}
+.main-content{
+    width: 337px;
+}
+.main-content__h1{
+    text-align: center;
+    color: var(--bg-color);
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 81px;
+    font-size: 96px;
+    overflow-wrap: break-word;
+}
+.img-content1{
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    z-index: -1;
+}
+.img-content2{
+    position: absolute;
+    bottom: 130px;
+    right: 80px;
+    z-index: -1;
+}
+.buttons{
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+.btn{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/*Estilos de la Calculadora Polinomio*/
+
+.polinomio-bg{
+    background-color: var(--yellow-color);
+    position: relative;
+}
+.main-polinomio__h1{
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 63px;
+    font-size: 64px;
+    overflow-wrap: break-word;
+}
+.img-polinomio1{
+    position: absolute;
+    top: 400px;
+    left: -40px;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+.img-polinomio1 img{
+    width: 216px;
+}
+.img-polinomio2{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: -1;
+}
+.img-polinomio2 img{
+    width: 216px;
+}
+.img-polinomio3{
+    position: absolute;
+    rotate: -90deg;
+    top: 200px;
+    right: 0px;
+    z-index: -1;
+}
+.img-polinomio3 img{
+    width: 216px;
+}
+
+/*Estilos Calculadora de Puntas*/
+.card-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-bg-color);
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(22.2px);
+    box-shadow: 8px 9px 13.2px rgba(0, 0, 0, 0.25);
+}
+.card-h1{
+    color: var(--bg-color);
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.input-label{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+}
+.input-label input{
+    width: 116px;
+    height: 58px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--bg-color);
+    color: #ffffff;
+    outline: none;
+    text-align: center;
+    font-family: var(--font-open-sans);
+    font-size: 24px;
+}
+.input-label input::placeholder{
+    color: #c9c9c9;
+}
+#btn-result{
+    width: 255px;
+    height: 52px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--green-color);
+    color: var(--bg-color);
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+.btn-results2{
+    background-color: var(--yellow-color) !important;
+    color: var(--primary-color);
+}
+#results{
+    background-color: var(--card-bg-color);
+    border-radius: 25px;
+    backdrop-filter: blur(22.2px);
+    box-shadow: 8px 9px 13.2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    color: var(--bg-color);
+    font-weight: 800;
+}
